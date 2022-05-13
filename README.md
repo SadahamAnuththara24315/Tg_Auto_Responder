@@ -1,6 +1,6 @@
 # Cyber_Hacker_24315_Auto_Responder
 
-This is a auto responder to Telegram user account. I also use this. Now I describe code.
+This is an auto responder to Telegram user account. I also use this. Now I describe code.
 
 ## Step 1
 
