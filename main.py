@@ -1,26 +1,27 @@
 from telethon import TelegramClient, events
 
-apiId = 16804073
-apiHash = '2987ccbbc4d989e610675106783c558c'
+apiId = ...
+apiHash = '...'
 
 client = TelegramClient('user', apiId, apiHash)
 client.start()
+dp = '...'
 
 @client.on(events.NewMessage(pattern='(?i)hey|Hey|Hi|hi|Hello|hello'))
 async def handler(event):
     helloMsg = 'Hello I am Cyber Hacker (It\'s not my real name😄)\n\nIf you want to know about me please check this. [About Cyber hacker 24315](t.me/Cyber_Hacker_24315_About).\n\nSend this keywords to know more.\n\n    github\n    cyber_hackers_projects\n    skills\n\n Note: This message and message comes by above keywords are programmable messages. But I am a real human. So if you want to contact me wait for I able to come online.'
     sender = await event.get_input_sender()
-    await client.send_message(sender, helloMsg, file='dp.jpg', link_preview=False)
+    await client.send_message(sender, helloMsg, file=dp, link_preview=False)
 
 @client.on(events.NewMessage(pattern='(?i)github'))
 async def handler(event):
     sender = await event.get_input_sender()
-    await client.send_message(sender, 'This is my [My Github Account](https://github.com/SadahamAnuththara24315)', file='dp.jpg', link_preview=False)
+    await client.send_message(sender, 'This is my [My Github Account](https://github.com/SadahamAnuththara24315)', file=dp, link_preview=False)
 
 @client.on(events.NewMessage(pattern='(?i)cyber_hackers_projects'))
 async def handler(event):
     sender = await event.get_input_sender()
-    await client.send_message(sender, 'Check my projects from [Projects of Cyber Hacker 24315](t.me/Projects_of_Cyber_Hacker_24315)', file='dp.jpg', link_preview=False)
+    await client.send_message(sender, 'Check my projects from [Projects of Cyber Hacker 24315](t.me/Projects_of_Cyber_Hacker_24315)', file=dp, link_preview=False)
 
 @client.on(events.NewMessage(pattern='(?i)skills'))
 async def handler(event):
