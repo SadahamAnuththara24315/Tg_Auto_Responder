@@ -12,7 +12,7 @@ pip install telethon
 Then you can download this code.
 
 - Then you want to get your api_id and your api_hash.
-- You can get it from [this](https://www.my.telegram.org).
+- You can get it from [https://www.my.telegram.org](https://my.telegram.org/auth).
 - In this site first you want to verify your number. After verify your number, Click Api development tools. 
 - Then give name to your project and give a short name.
 
